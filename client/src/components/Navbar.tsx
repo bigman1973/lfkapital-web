@@ -37,9 +37,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-gradient-gold">
-                LF CAPITAL
-              </div>
+              <img 
+                src="/logo-lfcapital.png" 
+                alt="LF CAPITAL" 
+                className="h-12 w-auto"
+              />
             </a>
           </Link>
 
