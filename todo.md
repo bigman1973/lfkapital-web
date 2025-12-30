@@ -85,3 +85,61 @@
 - [x] Integrar logo en navbar
 - [x] Añadir favicon
 - [x] Actualizar meta tags con branding
+
+## Fase 4: Homepage con Propiedades Showcase
+- [x] Actualizar homepage con hero section mejorado
+- [x] Crear sección de propiedades showcase (públicas)
+- [x] Añadir sección "How We Protect Your Privacy"
+- [x] Crear sección de estadísticas de credibilidad
+- [x] Mejorar sección de servicios con iconografía
+- [x] Optimizar responsive design
+
+## Fase 5: Private Collection
+- [ ] Crear página de Private Collection
+- [ ] Implementar formulario "Request Access"
+- [ ] Crear vista previa de propiedades privadas (sin detalles)
+- [ ] Implementar sistema de acceso restringido por rol
+
+## Fase 6: Sistema KYC y Proof of Funds
+- [ ] Crear formulario de KYC con carga de documentos
+- [ ] Implementar carga de documentos a S3
+- [ ] Crear formulario de Proof of Funds
+- [ ] Implementar panel de revisión para agentes internos
+- [ ] Sistema de aprobación/rechazo con notificaciones
+- [ ] Generar NDAs automáticos al aprobar
+
+## Fase 7: Proyecto Altruista
+- [ ] Crear página del proyecto altruista
+- [ ] Diseñar sección de impacto con métricas
+- [ ] Implementar galería de proyectos financiados
+- [ ] Añadir testimonios de beneficiarios
+- [ ] Sistema de transparencia de donaciones
+- [ ] Integrar en homepage
+
+## Fase 8: Dashboards Personalizados
+- [ ] Dashboard de comprador con propiedades guardadas
+- [ ] Dashboard de vendedor con gestión de listings
+- [ ] Dashboard de agente interno con aprobaciones
+- [ ] Dashboard de agente colaborador con comisiones
+- [ ] Sistema de notificaciones por dashboard
+
+## Fase 9: Gestión de Propiedades
+- [ ] Formulario de alta de propiedades
+- [ ] Galería de imágenes con drag & drop
+- [ ] Editor de descripción multiidioma
+- [ ] Control de visibilidad (pública/privada)
+- [ ] Sistema de etiquetas y filtros
+
+## Fase 10: Sistema de Honorarios
+- [ ] Crear tabla de honorarios y gastos
+- [ ] Formulario de registro de servicios
+- [ ] Sistema de tracking por cliente
+- [ ] Generación de facturas
+- [ ] Dashboard de ingresos
+
+## Fase 11: Testing y Checkpoint Final
+- [ ] Escribir tests unitarios para todas las funcionalidades
+- [ ] Testing de flujos completos
+- [ ] Verificar multiidioma en todas las páginas
+- [ ] Testing de seguridad y permisos
+- [ ] Crear checkpoint final

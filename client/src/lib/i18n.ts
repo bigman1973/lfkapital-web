@@ -16,12 +16,71 @@ const resources = {
         login: 'Iniciar Sesión',
         logout: 'Cerrar Sesión',
       },
-      // Hero Section
-      hero: {
-        title: 'Exclusividad y Confidencialidad en Real Estate de Lujo',
-        subtitle: 'Conectamos a clientes de alto patrimonio con propiedades excepcionales, manteniendo su privacidad como máxima prioridad',
-        cta: 'Explorar Propiedades',
-        ctaSecondary: 'Solicitar Consultoría',
+      // Home page
+      home: {
+        hero: {
+          title1: "Exclusividad y",
+          title2: "Confidencialidad",
+          title3: "en Bienes Raíces de Lujo",
+          subtitle: "Conectamos clientes de alto patrimonio con propiedades excepcionales, manteniendo su privacidad como máxima prioridad",
+          cta1: "Explorar Propiedades",
+          cta2: "Solicitar Consultoría"
+        },
+        stats: {
+          transactions: "En Transacciones",
+          clients: "Clientes UHNW",
+          satisfaction: "Satisfacción",
+          countries: "Países"
+        },
+        showcase: {
+          title: "Historias de Éxito Recientes",
+          subtitle: "Un vistazo a las propiedades excepcionales que hemos transaccionado con éxito"
+        },
+        private: {
+          title: "Colección Privada",
+          subtitle: "Accede a nuestro portafolio exclusivo de propiedades off-market. Disponible solo para compradores verificados con capacidad financiera comprobada.",
+          feature1: "50+ Listados Exclusivos",
+          feature2: "Solo Compradores Verificados",
+          feature3: "Protegido por NDA",
+          cta: "Solicitar Acceso",
+          note: "Requiere verificación KYC y prueba de fondos"
+        },
+        privacy: {
+          title: "Cómo Protegemos Tu Privacidad",
+          subtitle: "Tu confidencialidad es primordial. Así es como la garantizamos."
+        },
+        services: {
+          confidentiality: {
+            title: "Confidencialidad Absoluta",
+            desc: "Tu privacidad es nuestra máxima prioridad. Todas las transacciones se manejan con la máxima discreción."
+          },
+          verification: {
+            title: "Solo Compradores Verificados",
+            desc: "Verificación rigurosa de KYC y prueba de fondos garantiza solo compradores serios."
+          },
+          offmarket: {
+            title: "Acceso Off-Market",
+            desc: "Acceso exclusivo a propiedades nunca listadas públicamente, protegiendo la privacidad del vendedor."
+          },
+          altruistic: {
+            title: "Lujo con Propósito",
+            desc: "Parte de cada transacción apoya nuestra misión de proporcionar refugio a quienes lo necesitan."
+          }
+        },
+        altruistic: {
+          badge: "Lujo con Propósito",
+          title: "Cada Transacción Crea Impacto",
+          description: "Creemos que quienes han sido bendecidos con riqueza tienen la responsabilidad de ayudar a quienes no tienen hogar. Una parte de cada transacción va directamente a proporcionar vivienda segura para personas sin hogar.",
+          stat1: "Personas Alojadas",
+          stat2: "Donados",
+          cta: "Conoce Nuestra Misión"
+        },
+        cta: {
+          title: "¿Listo para Comenzar tu Viaje?",
+          subtitle: "Ya sea comprando o vendiendo, proporcionamos la discreción y experiencia que mereces.",
+          buy: "Quiero Comprar",
+          sell: "Quiero Vender"
+        }
       },
       // Services
       services: {
@@ -150,11 +209,70 @@ const resources = {
         login: 'Login',
         logout: 'Logout',
       },
-      hero: {
-        title: 'Exclusivity and Confidentiality in Luxury Real Estate',
-        subtitle: 'We connect high-net-worth clients with exceptional properties, keeping their privacy as our top priority',
-        cta: 'Explore Properties',
-        ctaSecondary: 'Request Consultation',
+      home: {
+        hero: {
+          title1: "Exclusivity and",
+          title2: "Confidentiality",
+          title3: "in Luxury Real Estate",
+          subtitle: "We connect high-net-worth clients with exceptional properties, keeping their privacy as our top priority",
+          cta1: "Explore Properties",
+          cta2: "Request Consultation"
+        },
+        stats: {
+          transactions: "In Transactions",
+          clients: "UHNW Clients",
+          satisfaction: "Satisfaction Rate",
+          countries: "Countries"
+        },
+        showcase: {
+          title: "Recent Success Stories",
+          subtitle: "A glimpse of the exceptional properties we've successfully transacted"
+        },
+        private: {
+          title: "Private Collection",
+          subtitle: "Access our exclusive portfolio of off-market properties. Available only to verified buyers with proven financial capacity.",
+          feature1: "50+ Exclusive Listings",
+          feature2: "Verified Buyers Only",
+          feature3: "NDA Protected",
+          cta: "Request Access",
+          note: "Requires KYC verification and proof of funds"
+        },
+        privacy: {
+          title: "How We Protect Your Privacy",
+          subtitle: "Your confidentiality is paramount. Here's how we ensure it."
+        },
+        services: {
+          confidentiality: {
+            title: "Absolute Confidentiality",
+            desc: "Your privacy is our top priority. All transactions are handled with the utmost discretion."
+          },
+          verification: {
+            title: "Verified Buyers Only",
+            desc: "Rigorous KYC and proof of funds verification ensures serious buyers only."
+          },
+          offmarket: {
+            title: "Off-Market Access",
+            desc: "Exclusive access to properties never listed publicly, protecting seller privacy."
+          },
+          altruistic: {
+            title: "Luxury with Purpose",
+            desc: "Part of every transaction supports our mission to provide shelter for those in need."
+          }
+        },
+        altruistic: {
+          badge: "Luxury with Purpose",
+          title: "Every Transaction Creates Impact",
+          description: "We believe that those who have been blessed with wealth have a responsibility to help those without shelter. A portion of every transaction goes directly to providing safe housing for people experiencing homelessness.",
+          stat1: "People Housed",
+          stat2: "Donated",
+          cta: "Learn About Our Mission"
+        },
+        cta: {
+          title: "Ready to Begin Your Journey?",
+          subtitle: "Whether buying or selling, we provide the discretion and expertise you deserve.",
+          buy: "I Want to Buy",
+          sell: "I Want to Sell"
+        }
       },
       services: {
         title: 'Our Services',
@@ -276,11 +394,70 @@ const resources = {
         login: 'تسجيل الدخول',
         logout: 'تسجيل الخروج',
       },
-      hero: {
-        title: 'الحصرية والسرية في العقارات الفاخرة',
-        subtitle: 'نربط العملاء ذوي الثروات العالية بعقارات استثنائية، مع الحفاظ على خصوصيتهم كأولوية قصوى',
-        cta: 'استكشف العقارات',
-        ctaSecondary: 'طلب استشارة',
+      home: {
+        hero: {
+          title1: "التفرد و",
+          title2: "السرية",
+          title3: "في العقارات الفاخرة",
+          subtitle: "نربط العملاء ذوي الثروات العالية بعقارات استثنائية، مع الحفاظ على خصوصيتهم كأولوية قصوى",
+          cta1: "استكشف العقارات",
+          cta2: "طلب استشارة"
+        },
+        stats: {
+          transactions: "في المعاملات",
+          clients: "عملاء UHNW",
+          satisfaction: "معدل الرضا",
+          countries: "دول"
+        },
+        showcase: {
+          title: "قصص نجاح حديثة",
+          subtitle: "لمحة عن العقارات الاستثنائية التي تم تداولها بنجاح"
+        },
+        private: {
+          title: "المجموعة الخاصة",
+          subtitle: "الوصول إلى محفظتنا الحصرية من العقارات خارج السوق. متاح فقط للمشترين المعتمدين ذوي القدرة المالية المثبتة.",
+          feature1: "50+ قوائم حصرية",
+          feature2: "مشترون معتمدون فقط",
+          feature3: "محمي بـ NDA",
+          cta: "طلب الوصول",
+          note: "يتطلب التحقق من KYC وإثبات الأموال"
+        },
+        privacy: {
+          title: "كيف نحمي خصوصيتك",
+          subtitle: "سريتك هي الأهم. إليك كيف نضمن ذلك."
+        },
+        services: {
+          confidentiality: {
+            title: "السرية المطلقة",
+            desc: "خصوصيتك هي أولويتنا القصوى. يتم التعامل مع جميع المعاملات بأقصى قدر من السرية."
+          },
+          verification: {
+            title: "مشترون معتمدون فقط",
+            desc: "التحقق الصارم من KYC وإثبات الأموال يضمن مشترين جاديين فقط."
+          },
+          offmarket: {
+            title: "الوصول خارج السوق",
+            desc: "وصول حصري إلى عقارات لم يتم إدراجها علنًا أبدًا، مما يحمي خصوصية البائع."
+          },
+          altruistic: {
+            title: "الفخامة بهدف",
+            desc: "جزء من كل معاملة يدعم مهمتنا لتوفير المأوى لمن يحتاجون إليه."
+          }
+        },
+        altruistic: {
+          badge: "الفخامة بهدف",
+          title: "كل معاملة تخلق تأثيرًا",
+          description: "نعتقد أن أولئك الذين تم منحهم الثروة لديهم مسؤولية لمساعدة أولئك الذين ليس لديهم مأوى. يذهب جزء من كل معاملة مباشرة لتوفير سكن آمن للأشخاص الذين يعانون من التشرد.",
+          stat1: "أشخاص تم إيواؤهم",
+          stat2: "تم التبرع به",
+          cta: "تعرف على مهمتنا"
+        },
+        cta: {
+          title: "هل أنت مستعد لبدء رحلتك؟",
+          subtitle: "سواء كنت تشتري أو تبيع، نحن نقدم السرية والخبرة التي تستحقها.",
+          buy: "أريد الشراء",
+          sell: "أريد البيع"
+        }
       },
       services: {
         title: 'خدماتنا',
