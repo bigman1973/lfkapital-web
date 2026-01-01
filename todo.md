@@ -171,7 +171,7 @@
 - [ ] Añadir sección explicativa del método en homepage
 
 ## Implementación Fase 1: El Método LF CAPITAL
-- [ ] Añadir sección "El Método LF CAPITAL" en homepage
+- [x] Añadir sección "El Método LF CAPITAL" en homepage
 - [ ] Crear visualización de red global de agentes
 - [x] Extender esquema de base de datos con clientProfiles
 - [x] Extender esquema con propertyMatches

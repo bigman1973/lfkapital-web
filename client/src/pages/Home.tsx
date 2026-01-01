@@ -258,6 +258,100 @@ export default function Home() {
         </div>
       </section>
 
+      {/* El Método LF CAPITAL - Red Global */}
+      <section className="py-24 bg-gradient-to-br from-charcoal via-charcoal/95 to-charcoal">
+        <div className="container">
+          <div className="text-center mb-16">
+            <Globe className="w-16 h-16 text-gold mx-auto mb-6" />
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-cream mb-6">
+              {t("home.method.title")}
+            </h2>
+            <p className="text-xl text-cream/80 max-w-4xl mx-auto leading-relaxed">
+              {t("home.method.subtitle")}
+            </p>
+          </div>
+
+          {/* 3 Pilares del Método */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <Card className="bg-charcoal/50 border-gold/20 p-8 text-center hover:border-gold/40 transition-all">
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="w-8 h-8 text-gold" />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-cream mb-4">
+                {t("home.method.pillar1.title")}
+              </h3>
+              <p className="text-cream/70 leading-relaxed">
+                {t("home.method.pillar1.desc")}
+              </p>
+            </Card>
+
+            <Card className="bg-charcoal/50 border-gold/20 p-8 text-center hover:border-gold/40 transition-all">
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-gold" />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-cream mb-4">
+                {t("home.method.pillar2.title")}
+              </h3>
+              <p className="text-cream/70 leading-relaxed">
+                {t("home.method.pillar2.desc")}
+              </p>
+            </Card>
+
+            <Card className="bg-charcoal/50 border-gold/20 p-8 text-center hover:border-gold/40 transition-all">
+              <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-gold" />
+              </div>
+              <h3 className="font-serif text-2xl font-bold text-cream mb-4">
+                {t("home.method.pillar3.title")}
+              </h3>
+              <p className="text-cream/70 leading-relaxed">
+                {t("home.method.pillar3.desc")}
+              </p>
+            </Card>
+          </div>
+
+          {/* Ejemplo de Matching Cross-Continental */}
+          <div className="bg-gold/5 border border-gold/20 rounded-lg p-8 md:p-12">
+            <h3 className="font-serif text-3xl font-bold text-cream text-center mb-8">
+              {t("home.method.example.title")}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">\ud83c\uddea\ud83c\uddf8</span>
+                </div>
+                <p className="text-cream font-semibold text-lg mb-2">{t("home.method.example.property")}</p>
+                <p className="text-cream/60 text-sm">{t("home.method.example.propertyDesc")}</p>
+              </div>
+              
+              <div className="flex justify-center">
+                <div className="text-gold text-4xl">\u2192</div>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">\ud83c\udde6\ud83c\uddea</span>
+                </div>
+                <p className="text-cream font-semibold text-lg mb-2">{t("home.method.example.buyer")}</p>
+                <p className="text-cream/60 text-sm">{t("home.method.example.buyerDesc")}</p>
+              </div>
+            </div>
+            <p className="text-center text-cream/80 mt-8 text-lg italic">
+              {t("home.method.example.result")}
+            </p>
+          </div>
+
+          {/* Garantía */}
+          <div className="text-center mt-16">
+            <div className="inline-block bg-gold/10 border-2 border-gold/30 rounded-lg px-8 py-6">
+              <p className="text-cream text-xl font-semibold">
+                {t("home.method.guarantee")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Private Collection Teaser */}
       <section className="py-24 bg-charcoal text-cream">
         <div className="container text-center">

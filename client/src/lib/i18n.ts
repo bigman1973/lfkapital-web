@@ -47,6 +47,31 @@ const resources = {
             label: "Satisfacción del Cliente"
           }
         },
+        method: {
+          title: "El Método LF CAPITAL",
+          subtitle: "Nuestra red global de agentes elite conecta propiedades excepcionales con compradores cualificados en todo el mundo. Una villa en Toscana puede encontrar su comprador ideal en Dubai. Un penthouse en Tokio, su dueño perfecto en Nueva York.",
+          pillar1: {
+            title: "Red Global de Agentes Elite",
+            desc: "Colaboramos con los mejores agentes del top 1% en 20+ ciudades clave. Barcelona, Londres, Dubai, Nueva York, Tokio, Seúl, Singapur..."
+          },
+          pillar2: {
+            title: "Matching Inteligente Cross-Continental",
+            desc: "Identificamos al comprador perfecto para cada propiedad, sin importar dónde se encuentre en el mundo. Analizamos patrones de viaje, intereses y capacidad financiera."
+          },
+          pillar3: {
+            title: "Garantía de Exposición Cualificada",
+            desc: "Tu propiedad será presentada a los 50 compradores más cualificados del mundo en 30 días. No publicidad masiva, solo matching preciso."
+          },
+          example: {
+            title: "Ejemplo Real de Matching Global",
+            property: "Villa en Marbella",
+            propertyDesc: "€12M, vista al mar, 8 habitaciones",
+            buyer: "Comprador en Dubai",
+            buyerDesc: "UHNWI, busca segunda residencia en Europa",
+            result: "\"Nuestro agente en Dubai identificó al comprador perfecto que viaja a Marbella cada verano. Venta cerrada en 45 días, sin publicidad pública.\""
+          },
+          guarantee: "\ud83c\udfaf Garantía: Tu propiedad será vista por los 50 compradores más cualificados del mundo en 30 días"
+        },
         showcase: {
           title: "Transacciones Exitosas",
           subtitle: "Ejemplos de propiedades excepcionales que hemos vendido con total discreción y profesionalismo"
@@ -297,6 +322,31 @@ const resources = {
             label: "Client Satisfaction"
           }
         },
+        method: {
+          title: "The LF CAPITAL Method",
+          subtitle: "Our global network of elite agents connects exceptional properties with qualified buyers worldwide. A villa in Tuscany can find its ideal buyer in Dubai. A penthouse in Tokyo, its perfect owner in New York.",
+          pillar1: {
+            title: "Global Network of Elite Agents",
+            desc: "We collaborate with the best agents in the top 1% across 20+ key cities. Barcelona, London, Dubai, New York, Tokyo, Seoul, Singapore..."
+          },
+          pillar2: {
+            title: "Intelligent Cross-Continental Matching",
+            desc: "We identify the perfect buyer for each property, regardless of where they are in the world. We analyze travel patterns, interests, and financial capacity."
+          },
+          pillar3: {
+            title: "Qualified Exposure Guarantee",
+            desc: "Your property will be presented to the 50 most qualified buyers in the world within 30 days. No mass advertising, only precise matching."
+          },
+          example: {
+            title: "Real Global Matching Example",
+            property: "Villa in Marbella",
+            propertyDesc: "€12M, sea view, 8 bedrooms",
+            buyer: "Buyer in Dubai",
+            buyerDesc: "UHNWI, seeking second home in Europe",
+            result: "\"Our agent in Dubai identified the perfect buyer who travels to Marbella every summer. Sale closed in 45 days, no public advertising.\""
+          },
+          guarantee: "\ud83c\udfaf Guarantee: Your property will be seen by the 50 most qualified buyers in the world within 30 days"
+        },
         showcase: {
           title: "Successful Transactions",
           subtitle: "Examples of exceptional properties we have sold with complete discretion and professionalism"
@@ -539,6 +589,31 @@ const resources = {
             value: "التميز",
             label: "رضا العملاء"
           }
+        },
+        method: {
+          title: "طريقة LF CAPITAL",
+          subtitle: "شبكتنا العالمية من الوكلاء النخبة تربط العقارات الاستثنائية بالمشترين المؤهلين في جميع أنحاء العالم. فيلا في توسكانا يمكن أن تجد مشتريها المثالي في دبي. بنتهاوس في طوكيو، مالكه المثالي في نيويورك.",
+          pillar1: {
+            title: "شبكة عالمية من الوكلاء النخبة",
+            desc: "نتعاون مع أفضل الوكلاء في أعلى 1٪ في أكثر من 20 مدينة رئيسية. برشلونة، لندن، دبي، نيويورك، طوكيو، سيول، سنغافورة..."
+          },
+          pillar2: {
+            title: "مطابقة ذكية عبر القارات",
+            desc: "نحدد المشتري المثالي لكل عقار، بغض النظر عن مكان وجوده في العالم. نحلل أنماط السفر والاهتمامات والقدرة المالية."
+          },
+          pillar3: {
+            title: "ضمان التعرض المؤهل",
+            desc: "سيتم عرض عقارك على أفضل 50 مشترٍ مؤهل في العالم خلال 30 يومًا. لا إعلانات جماعية، فقط مطابقة دقيقة."
+          },
+          example: {
+            title: "مثال حقيقي للمطابقة العالمية",
+            property: "فيلا في ماربيلا",
+            propertyDesc: "12 مليون يورو، إطلالة على البحر، 8 غرف نوم",
+            buyer: "مشترٍ في دبي",
+            buyerDesc: "UHNWI، يبحث عن منزل ثانٍ في أوروبا",
+            result: "\"حدد وكيلنا في دبي المشتري المثالي الذي يسافر إلى ماربيلا كل صيف. أغلق البيع في 45 يومًا، بدون إعلانات عامة.\""
+          },
+          guarantee: "\ud83c\udfaf ضمان: سيشاهد عقارك أفضل 50 مشترٍ مؤهل في العالم خلال 30 يومًا"
         },
         showcase: {
           title: "معاملات ناجحة",
