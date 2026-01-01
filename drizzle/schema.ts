@@ -1,4 +1,4 @@
-import { mysqlTable, mysqlSchema, AnyMySqlColumn, int, text, decimal, mysqlEnum, json, timestamp, varchar, boolean } from "drizzle-orm/mysql-core"
+import { mysqlTable, mysqlSchema, AnyMySqlColumn, bigint, int, text, decimal, mysqlEnum, json, timestamp, varchar, boolean } from "drizzle-orm/mysql-core"
 import { sql } from "drizzle-orm"
 
 export const altruisticProjects = mysqlTable("altruisticProjects", {
@@ -17,7 +17,7 @@ export const altruisticProjects = mysqlTable("altruisticProjects", {
 	status: mysqlEnum(['active','completed','paused']).default('active').notNull(),
 	startDate: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
 	endDate: timestamp({ mode: 'string' }),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
 });
 
@@ -34,7 +34,7 @@ export const contactRequests = mysqlTable("contactRequests", {
 	status: mysqlEnum(['new','in_progress','resolved','closed']).default('new').notNull(),
 	assignedTo: int(),
 	notes: text(),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
 });
 
@@ -50,7 +50,7 @@ export const feesAndExpenses = mysqlTable("feesAndExpenses", {
 	invoiceUrl: text(),
 	paidAt: timestamp({ mode: 'string' }),
 	createdBy: int().notNull(),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
 });
 
@@ -122,7 +122,7 @@ export const properties = mysqlTable("properties", {
 	yearBuilt: int(),
 	featured: boolean().default(false),
 	views: int(),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
 });
 
@@ -134,7 +134,7 @@ export const propertyViewings = mysqlTable("propertyViewings", {
 	scheduledAt: timestamp({ mode: 'string' }).notNull(),
 	status: mysqlEnum(['scheduled','completed','cancelled','no_show']).default('scheduled').notNull(),
 	notes: text(),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
 });
 
@@ -143,7 +143,7 @@ export const savedProperties = mysqlTable("savedProperties", {
 	userId: int().notNull(),
 	propertyId: int().notNull(),
 	notes: text(),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 });
 
 export const users = mysqlTable("users", {
@@ -159,7 +159,7 @@ export const users = mysqlTable("users", {
 	preferredLanguage: mysqlEnum(['es','en','ar']).default('es').notNull(),
 	avatar: text(),
 	bio: text(),
-	createdAt: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
 	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
 	lastSignedIn: timestamp({ mode: 'string' }).default('CURRENT_TIMESTAMP').notNull(),
 });
@@ -182,3 +182,106 @@ export type SavedProperty = typeof savedProperties.$inferSelect;
 export type InsertSavedProperty = typeof savedProperties.$inferInsert;
 export type PropertyViewing = typeof propertyViewings.$inferSelect;
 export type InsertPropertyViewing = typeof propertyViewings.$inferInsert;
+
+// ============================================
+// EL MÉTODO LF CAPITAL - Sistema de Matching Global
+// ============================================
+
+/**
+ * Perfiles extendidos de clientes UHNWI para matching inteligente
+ */
+export const clientProfiles = mysqlTable("clientProfiles", {
+	id: int().autoincrement().notNull(),
+	userId: int().notNull(), // Referencias users(id)
+	netWorthEstimate: bigint({ mode: 'number' }), // Patrimonio neto estimado
+	liquidityEvents: json().$type<Array<{type: string, date: string, amount: number}>>(), // Eventos de liquidez
+	travelPatterns: json().$type<Array<{location: string, season: string, frequency: string}>>(), // Patrones de viaje
+	interests: json().$type<string[]>(), // ["golf", "yachting", "art_collection"]
+	currentProperties: json().$type<Array<{location: string, type: string, value: number}>>(), // Propiedades actuales
+	preferredRegions: json().$type<string[]>(), // ["Mediterranean", "Caribbean", "Asia"]
+	preferredPropertyTypes: json().$type<string[]>(), // ["villa", "penthouse", "beachfront"]
+	budgetMin: bigint({ mode: 'number' }),
+	budgetMax: bigint({ mode: 'number' }),
+	investmentGoals: text(), // Texto libre sobre objetivos
+	lastLiquidityEvent: timestamp({ mode: 'string' }),
+	probabilityScore: int(), // 0-100, calculado por sistema
+	source: varchar({ length: 255 }), // De dónde vino el lead
+	notes: text(), // Notas internas
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
+	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
+});
+
+/**
+ * Sistema de matching automático entre propiedades y clientes
+ */
+export const propertyMatches = mysqlTable("propertyMatches", {
+	id: int().autoincrement().notNull(),
+	propertyId: int().notNull(), // Referencias properties(id)
+	clientProfileId: int().notNull(), // Referencias clientProfiles(id)
+	matchScore: int().notNull(), // 0-100
+	matchReasons: json().$type<string[]>(), // ["location_match", "price_range", "lifestyle_fit"]
+	contactStatus: mysqlEnum(['not_contacted', 'contacted', 'interested', 'viewing_scheduled', 'offer_made', 'rejected']).default('not_contacted').notNull(),
+	lastContactDate: timestamp({ mode: 'string' }),
+	nextFollowUpDate: timestamp({ mode: 'string' }),
+	assignedAgentId: int(), // Referencias users(id) - agente asignado
+	notes: text(),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
+	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
+});
+
+/**
+ * Red global de agentes colaboradores
+ */
+export const partnerAgents = mysqlTable("partnerAgents", {
+	id: int().autoincrement().notNull(),
+	userId: int().notNull(), // Referencias users(id)
+	tier: mysqlEnum(['internal', 'partner_elite', 'collaborator']).default('collaborator').notNull(),
+	regions: json().$type<string[]>(), // ["Spain", "Portugal", "France"]
+	specializations: json().$type<string[]>(), // ["beachfront", "golf_properties", "vineyards"]
+	languages: json().$type<string[]>(), // ["es", "en", "fr"]
+	transactionsCompleted: int().default(0).notNull(),
+	averageSalePrice: bigint({ mode: 'number' }),
+	commissionSplit: decimal({ precision: 3, scale: 2 }).default('0.40').notNull(), // 0.40 = 40%
+	status: mysqlEnum(['active', 'inactive', 'pending_approval']).default('pending_approval').notNull(),
+	companyName: varchar({ length: 255 }),
+	licenseNumber: varchar({ length: 100 }),
+	website: text(),
+	bio: text(),
+	approvedBy: int(), // Referencias users(id) - quien aprobó
+	approvedAt: timestamp({ mode: 'string' }),
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
+	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
+});
+
+/**
+ * Campañas automatizadas de marketing
+ */
+export const marketingCampaigns = mysqlTable("marketingCampaigns", {
+	id: int().autoincrement().notNull(),
+	propertyId: int(), // Referencias properties(id)
+	name: varchar({ length: 255 }).notNull(),
+	targetClientIds: json().$type<number[]>(), // [123, 456, 789] IDs de clientProfiles
+	campaignType: mysqlEnum(['email', 'video', 'event', 'multi_touch']).notNull(),
+	status: mysqlEnum(['draft', 'scheduled', 'active', 'completed', 'cancelled']).default('draft').notNull(),
+	scheduledDate: timestamp({ mode: 'string' }),
+	sentDate: timestamp({ mode: 'string' }),
+	openRate: decimal({ precision: 5, scale: 2 }),
+	clickRate: decimal({ precision: 5, scale: 2 }),
+	responseRate: decimal({ precision: 5, scale: 2 }),
+	conversions: int().default(0).notNull(),
+	budget: decimal({ precision: 10, scale: 2 }),
+	currency: mysqlEnum(['USD','EUR','AED']).default('EUR').notNull(),
+	notes: text(),
+	createdBy: int().notNull(), // Referencias users(id)
+	createdAt: timestamp({ mode: 'string' }).defaultNow().notNull(),
+	updatedAt: timestamp({ mode: 'string' }).defaultNow().onUpdateNow().notNull(),
+});
+
+export type ClientProfile = typeof clientProfiles.$inferSelect;
+export type InsertClientProfile = typeof clientProfiles.$inferInsert;
+export type PropertyMatch = typeof propertyMatches.$inferSelect;
+export type InsertPropertyMatch = typeof propertyMatches.$inferInsert;
+export type PartnerAgent = typeof partnerAgents.$inferSelect;
+export type InsertPartnerAgent = typeof partnerAgents.$inferInsert;
+export type MarketingCampaign = typeof marketingCampaigns.$inferSelect;
+export type InsertMarketingCampaign = typeof marketingCampaigns.$inferInsert;

@@ -160,3 +160,23 @@
 - [x] Aumentar tamaño del claim significativamente
 - [x] Incrementar peso visual y contraste
 - [x] Reducir prominencia del resto de textos del hero
+
+## Investigación y Desarrollo del Método Bespoke
+- [x] Investigar en profundidad el método disruptivo de Bespoke Real Estate
+- [x] Analizar su sistema de matching global de propiedades
+- [x] Estudiar su red de agentes elite y colaboración internacional
+- [x] Identificar su tecnología propietaria y ventajas competitivas
+- [x] Diseñar sistema equivalente o superior para LF CAPITAL
+- [ ] Justificar presencia global en la web (matching cross-continental)
+- [ ] Añadir sección explicativa del método en homepage
+
+## Implementación Fase 1: El Método LF CAPITAL
+- [ ] Añadir sección "El Método LF CAPITAL" en homepage
+- [ ] Crear visualización de red global de agentes
+- [x] Extender esquema de base de datos con clientProfiles
+- [x] Extender esquema con propertyMatches
+- [x] Extender esquema con partnerAgents
+- [ ] Crear formulario mejorado "Request Consultation" con captura de datos UHNWI
+- [ ] Implementar tRPC procedures para gestión de perfiles de clientes
+- [ ] Crear dashboard básico de matching (admin)
+- [ ] Sistema de notificaciones cuando hay match potencial
