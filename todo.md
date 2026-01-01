@@ -150,3 +150,8 @@
 - [x] Eliminar estadísticas ostentosas de operaciones cerradas
 - [x] Reemplazar con valores más discretos (experiencia, red global, satisfacción)
 - [x] Generar imágenes de propiedades de lujo para cada ubicación
+
+## Integración del Claim de Marca
+- [x] Añadir claim "Where Luxury is a Wise Investment" al hero section
+- [x] Actualizar traducciones del claim en ES/EN/AR
+- [x] Integrar claim en navbar o footer como tagline

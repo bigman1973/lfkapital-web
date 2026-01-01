@@ -155,6 +155,11 @@ export default function Home() {
         </div>
         
         <div className="container relative z-10 text-center px-4">
+          <div className="mb-4">
+            <p className="text-gold text-sm md:text-base font-semibold tracking-[0.3em] uppercase">
+              {t("home.hero.claim")}
+            </p>
+          </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-cream mb-6 leading-tight">
             {t("home.hero.title1")}<br />
             <span className="text-gold">{t("home.hero.title2")}</span><br />

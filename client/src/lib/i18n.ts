@@ -19,7 +19,8 @@ const resources = {
       // Home page
       home: {
         hero: {
-          title1: "Exclusividad y",
+          claim: "Where Luxury is a Wise Investment",
+          title1: "Exclusividad y Confidencialidad",
           title2: "Confidencialidad",
           title3: "en Bienes Raíces de Lujo",
           subtitle: "Conectamos clientes de alto patrimonio con propiedades excepcionales, manteniendo su privacidad como máxima prioridad",
@@ -268,6 +269,7 @@ const resources = {
       },
       home: {
         hero: {
+          claim: "Where Luxury is a Wise Investment",
           title1: "Exclusivity and",
           title2: "Confidentiality",
           title3: "in Luxury Real Estate",
@@ -510,6 +512,7 @@ const resources = {
       },
       home: {
         hero: {
+          claim: "Where Luxury is a Wise Investment",
           title1: "التفرد و",
           title2: "السرية",
           title3: "في العقارات الفاخرة",
@@ -617,6 +620,11 @@ const resources = {
           stat1: "أشخاص تم إيواؤهم",
           stat2: "تم التبرع به",
           cta: "تعرف على مهمتنا"
+        },
+        finalCta: {
+          title: "هل أنت مستعد للبدء؟",
+          subtitle: "اتصل بنا للحصول على استشارة سرية حول احتياجاتك العقارية الفاخرة",
+          cta: "اتصل الآن"
         },
         cta: {
           title: "هل أنت مستعد لبدء رحلتك؟",
