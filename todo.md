@@ -155,3 +155,8 @@
 - [x] Añadir claim "Where Luxury is a Wise Investment" al hero section
 - [x] Actualizar traducciones del claim en ES/EN/AR
 - [x] Integrar claim en navbar o footer como tagline
+
+## Mejora Visual del Claim
+- [x] Aumentar tamaño del claim significativamente
+- [x] Incrementar peso visual y contraste
+- [x] Reducir prominencia del resto de textos del hero

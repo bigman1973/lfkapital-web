@@ -155,17 +155,18 @@ export default function Home() {
         </div>
         
         <div className="container relative z-10 text-center px-4">
-          <div className="mb-4">
-            <p className="text-gold text-sm md:text-base font-semibold tracking-[0.3em] uppercase">
+          <div className="mb-8">
+            <h1 className="text-gold text-3xl md:text-5xl lg:text-6xl font-bold tracking-[0.2em] uppercase mb-2">
               {t("home.hero.claim")}
-            </p>
+            </h1>
+            <div className="w-32 h-1 bg-gold mx-auto mt-4"></div>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-cream mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-semibold text-cream/80 mb-4 leading-tight">
             {t("home.hero.title1")}<br />
-            <span className="text-gold">{t("home.hero.title2")}</span><br />
+            <span className="text-cream/70">{t("home.hero.title2")}</span><br />
             {t("home.hero.title3")}
-          </h1>
-          <p className="text-xl md:text-2xl text-cream/90 mb-12 max-w-3xl mx-auto font-light">
+          </h2>
+          <p className="text-base md:text-lg text-cream/60 mb-12 max-w-2xl mx-auto font-light">
             {t("home.hero.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
