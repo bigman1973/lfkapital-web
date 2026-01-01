@@ -36,12 +36,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center space-x-2">
+            <a className="flex items-center space-x-3">
               <img 
                 src="/logo-lfcapital.png" 
                 alt="LF CAPITAL" 
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
+              <span className="font-serif text-2xl font-bold text-primary tracking-wide">
+                CAPITAL
+              </span>
             </a>
           </Link>
 
