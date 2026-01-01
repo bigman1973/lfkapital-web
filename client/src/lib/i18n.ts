@@ -32,9 +32,57 @@ const resources = {
           satisfaction: "Satisfacción",
           countries: "Países"
         },
+        values: {
+          since: {
+            value: "Desde 2020",
+            label: "Experiencia en Lujo"
+          },
+          network: {
+            value: "Red Global",
+            label: "Presencia Internacional"
+          },
+          satisfaction: {
+            value: "Excelencia",
+            label: "Satisfacción del Cliente"
+          }
+        },
         showcase: {
-          title: "Historias de Éxito Recientes",
-          subtitle: "Un vistazo a las propiedades excepcionales que hemos transaccionado con éxito"
+          title: "Transacciones Exitosas",
+          subtitle: "Ejemplos de propiedades excepcionales que hemos vendido con total discreción y profesionalismo"
+        },
+        properties: {
+          toscana: {
+            title: "Villa Renacentista - Toscana",
+            location: "Chianti, Toscana, Italia"
+          },
+          barcelona: {
+            title: "Ático Modernista - Barcelona",
+            location: "Eixample, Barcelona, España"
+          },
+          madrid: {
+            title: "Palacete Histórico - Madrid",
+            location: "Salamanca, Madrid, España"
+          },
+          london: {
+            title: "Townhouse Georgiano - Londres",
+            location: "Mayfair, Londres, Reino Unido"
+          },
+          seoul: {
+            title: "Penthouse Ultramoderno - Seúl",
+            location: "Gangnam, Seúl, Corea del Sur"
+          },
+          tokyo: {
+            title: "Residencia Zen - Tokio",
+            location: "Shibuya, Tokio, Japón"
+          },
+          singapore: {
+            title: "Apartamento Marina Bay - Singapur",
+            location: "Marina Bay, Singapur"
+          },
+          begur: {
+            title: "Villa Mediterránea - Begur",
+            location: "Costa Brava, Begur, España"
+          }
         },
         private: {
           title: "Colección Privada",
@@ -67,13 +115,22 @@ const resources = {
             desc: "Parte de cada transacción apoya nuestra misión de proporcionar refugio a quienes lo necesitan."
           }
         },
+        protection: {
+          title: "Cómo Protegemos Tu Privacidad",
+          subtitle: "Tu confidencialidad es primordial. Así es como la garantizamos."
+        },
         altruistic: {
           badge: "Lujo con Propósito",
-          title: "Cada Transacción Crea Impacto",
-          description: "Creemos que quienes han sido bendecidos con riqueza tienen la responsabilidad de ayudar a quienes no tienen hogar. Una parte de cada transacción va directamente a proporcionar vivienda segura para personas sin hogar.",
+          title: "Lujo con Propósito Social",
+          description: "Creemos que el éxito debe compartirse. Parte de nuestros beneficios se destinan a crear una plataforma que proporcione acceso a vivienda para personas que, por cualquier motivo, no tienen un techo. Ganando con personas adineradas, damos oportunidades a quienes más lo necesitan.",
           stat1: "Personas Alojadas",
           stat2: "Donados",
-          cta: "Conoce Nuestra Misión"
+          cta: "Conocer Nuestro Proyecto"
+        },
+        finalCta: {
+          title: "¿Listo para Comenzar?",
+          subtitle: "Contáctenos para una consulta confidencial sobre sus necesidades inmobiliarias de lujo",
+          cta: "Contactar Ahora"
         },
         cta: {
           title: "¿Listo para Comenzar tu Viaje?",
@@ -224,9 +281,57 @@ const resources = {
           satisfaction: "Satisfaction Rate",
           countries: "Countries"
         },
+        values: {
+          since: {
+            value: "Since 2020",
+            label: "Luxury Expertise"
+          },
+          network: {
+            value: "Global Network",
+            label: "International Presence"
+          },
+          satisfaction: {
+            value: "Excellence",
+            label: "Client Satisfaction"
+          }
+        },
         showcase: {
-          title: "Recent Success Stories",
-          subtitle: "A glimpse of the exceptional properties we've successfully transacted"
+          title: "Successful Transactions",
+          subtitle: "Examples of exceptional properties we have sold with complete discretion and professionalism"
+        },
+        properties: {
+          toscana: {
+            title: "Renaissance Villa - Tuscany",
+            location: "Chianti, Tuscany, Italy"
+          },
+          barcelona: {
+            title: "Modernist Penthouse - Barcelona",
+            location: "Eixample, Barcelona, Spain"
+          },
+          madrid: {
+            title: "Historic Mansion - Madrid",
+            location: "Salamanca, Madrid, Spain"
+          },
+          london: {
+            title: "Georgian Townhouse - London",
+            location: "Mayfair, London, United Kingdom"
+          },
+          seoul: {
+            title: "Ultra-Modern Penthouse - Seoul",
+            location: "Gangnam, Seoul, South Korea"
+          },
+          tokyo: {
+            title: "Zen Residence - Tokyo",
+            location: "Shibuya, Tokyo, Japan"
+          },
+          singapore: {
+            title: "Marina Bay Apartment - Singapore",
+            location: "Marina Bay, Singapore"
+          },
+          begur: {
+            title: "Mediterranean Villa - Begur",
+            location: "Costa Brava, Begur, Spain"
+          }
         },
         private: {
           title: "Private Collection",
@@ -259,13 +364,22 @@ const resources = {
             desc: "Part of every transaction supports our mission to provide shelter for those in need."
           }
         },
+        protection: {
+          title: "How We Protect Your Privacy",
+          subtitle: "Your confidentiality is paramount. Here's how we ensure it."
+        },
         altruistic: {
           badge: "Luxury with Purpose",
-          title: "Every Transaction Creates Impact",
-          description: "We believe that those who have been blessed with wealth have a responsibility to help those without shelter. A portion of every transaction goes directly to providing safe housing for people experiencing homelessness.",
+          title: "Luxury with Social Purpose",
+          description: "We believe success should be shared. Part of our profits goes towards creating a platform that provides access to housing for people who, for any reason, don't have a roof over their heads. By earning with wealthy individuals, we give opportunities to those who need it most.",
           stat1: "People Housed",
           stat2: "Donated",
-          cta: "Learn About Our Mission"
+          cta: "Learn About Our Project"
+        },
+        finalCta: {
+          title: "Ready to Get Started?",
+          subtitle: "Contact us for a confidential consultation about your luxury real estate needs",
+          cta: "Contact Now"
         },
         cta: {
           title: "Ready to Begin Your Journey?",
@@ -409,9 +523,57 @@ const resources = {
           satisfaction: "معدل الرضا",
           countries: "دول"
         },
+        values: {
+          since: {
+            value: "منذ 2020",
+            label: "خبرة في الفخامة"
+          },
+          network: {
+            value: "شبكة عالمية",
+            label: "حضور دولي"
+          },
+          satisfaction: {
+            value: "التميز",
+            label: "رضا العملاء"
+          }
+        },
         showcase: {
-          title: "قصص نجاح حديثة",
-          subtitle: "لمحة عن العقارات الاستثنائية التي تم تداولها بنجاح"
+          title: "معاملات ناجحة",
+          subtitle: "أمثلة على العقارات الاستثنائية التي بعناها بسرية واحترافية كاملة"
+        },
+        properties: {
+          toscana: {
+            title: "فيلا عصر النهضة - توسكانا",
+            location: "كيانتي، توسكانا، إيطاليا"
+          },
+          barcelona: {
+            title: "بنتهاوس حداثي - برشلونة",
+            location: "إيكسامبل، برشلونة، إسبانيا"
+          },
+          madrid: {
+            title: "قصر تاريخي - مدريد",
+            location: "سالامانكا، مدريد، إسبانيا"
+          },
+          london: {
+            title: "منزل جورجي - لندن",
+            location: "مايفير، لندن، المملكة المتحدة"
+          },
+          seoul: {
+            title: "بنتهاوس فائق الحداثة - سيول",
+            location: "غانغنام، سيول، كوريا الجنوبية"
+          },
+          tokyo: {
+            title: "مقر زن - طوكيو",
+            location: "شيبويا، طوكيو، اليابان"
+          },
+          singapore: {
+            title: "شقة مارينا باي - سنغافورة",
+            location: "مارينا باي، سنغافورة"
+          },
+          begur: {
+            title: "فيلا متوسطية - بيغور",
+            location: "كوستا برافا، بيغور، إسبانيا"
+          }
         },
         private: {
           title: "المجموعة الخاصة",
@@ -444,9 +606,13 @@ const resources = {
             desc: "جزء من كل معاملة يدعم مهمتنا لتوفير المأوى لمن يحتاجون إليه."
           }
         },
+        protection: {
+          title: "كيف نحمي خصوصيتك",
+          subtitle: "سريتك هي الأهم. إليك كيف نضمن ذلك."
+        },
         altruistic: {
           badge: "الفخامة بهدف",
-          title: "كل معاملة تخلق تأثيرًا",
+          title: "الفخامة بهدف اجتماعي",
           description: "نعتقد أن أولئك الذين تم منحهم الثروة لديهم مسؤولية لمساعدة أولئك الذين ليس لديهم مأوى. يذهب جزء من كل معاملة مباشرة لتوفير سكن آمن للأشخاص الذين يعانون من التشرد.",
           stat1: "أشخاص تم إيواؤهم",
           stat2: "تم التبرع به",

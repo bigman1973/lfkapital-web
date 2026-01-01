@@ -143,3 +143,10 @@
 - [ ] Verificar multiidioma en todas las páginas
 - [ ] Testing de seguridad y permisos
 - [ ] Crear checkpoint final
+
+## Mejoras Homepage (Refinamiento)
+- [x] Cambiar hero image a propiedad de lujo estilo Nueva York
+- [x] Actualizar propiedades showcase con ubicaciones globales (Toscana, Barcelona, Madrid, Londres, Seúl, Tokio, Singapur, Begur)
+- [x] Eliminar estadísticas ostentosas de operaciones cerradas
+- [x] Reemplazar con valores más discretos (experiencia, red global, satisfacción)
+- [x] Generar imágenes de propiedades de lujo para cada ubicación
